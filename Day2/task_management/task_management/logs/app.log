@@ -1,0 +1,1139 @@
+[2026-03-23 11:06:02] - INFO - main - Application starting up...
+[2026-03-23 14:53:49] - INFO - main - Application starting up...
+[2026-03-23 14:54:12] - INFO - main - Application starting up...
+[2026-03-23 14:54:12] - INFO - main - FastAPI application startup completed.
+[2026-03-23 14:54:13] - INFO - main - Application starting up...
+[2026-03-23 14:54:13] - INFO - main - FastAPI application startup completed.
+[2026-03-23 14:54:26] - INFO - main - Application starting up...
+[2026-03-23 14:54:26] - INFO - main - FastAPI application startup completed.
+[2026-03-23 14:54:50] - INFO - main - Application starting up...
+[2026-03-23 14:54:50] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:01:38] - INFO - main - Application starting up...
+[2026-03-23 15:01:38] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:02:21] - INFO - main - Application starting up...
+[2026-03-23 15:02:21] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:02:32] - INFO - main - Application starting up...
+[2026-03-23 15:02:32] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:02:40] - INFO - main - Application starting up...
+[2026-03-23 15:02:40] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:02:50] - INFO - main - Application starting up...
+[2026-03-23 15:02:50] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:03:00] - INFO - main - Application starting up...
+[2026-03-23 15:03:00] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:03:05] - INFO - main - Application starting up...
+[2026-03-23 15:03:05] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:04] - INFO - main - Application starting up...
+[2026-03-23 15:12:04] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:07] - INFO - main - Application starting up...
+[2026-03-23 15:12:07] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:13] - INFO - main - Application starting up...
+[2026-03-23 15:12:13] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:14] - INFO - main - Application starting up...
+[2026-03-23 15:12:14] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:16] - INFO - main - Application starting up...
+[2026-03-23 15:12:16] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:18] - INFO - main - Application starting up...
+[2026-03-23 15:12:18] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:21] - INFO - main - Application starting up...
+[2026-03-23 15:12:21] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:27] - INFO - main - Application starting up...
+[2026-03-23 15:12:27] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:29] - INFO - main - Application starting up...
+[2026-03-23 15:12:29] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:30] - INFO - main - Application starting up...
+[2026-03-23 15:12:30] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:31] - INFO - main - Application starting up...
+[2026-03-23 15:12:31] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:33] - INFO - main - Application starting up...
+[2026-03-23 15:12:33] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:44] - INFO - main - Application starting up...
+[2026-03-23 15:12:44] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:12:49] - INFO - main - Root endpoint accessed.
+[2026-03-23 15:12:49] - INFO - api_requests - Request: GET / | Status: 200 | Time: 0.0095s
+[2026-03-23 15:12:57] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0008s
+[2026-03-23 15:12:57] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0435s
+[2026-03-23 15:13:21] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 15:13:21] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 453, in app
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 646, in solve_dependencies
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 677, in solve_dependencies
+    solved = await run_in_threadpool(call, **solved_result.values)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 25, in get_user_repository
+    return JsonRepository(settings.USERS_FILE, "users")
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 28, in __init__
+    super().__init__(file_path, collection_name)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\base_repository.py", line 24, in __init__
+    asyncio.run(self._ensure_file_exists())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\base_repository.py", line 28, in _ensure_file_exists
+    if not os.path.exists(self.file_path):
+           ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+[2026-03-23 15:13:24] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 15:13:24] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 453, in app
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 646, in solve_dependencies
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 677, in solve_dependencies
+    solved = await run_in_threadpool(call, **solved_result.values)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 25, in get_user_repository
+    return JsonRepository(settings.USERS_FILE, "users")
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 28, in __init__
+    super().__init__(file_path, collection_name)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\base_repository.py", line 24, in __init__
+    asyncio.run(self._ensure_file_exists())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\base_repository.py", line 28, in _ensure_file_exists
+    if not os.path.exists(self.file_path):
+           ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+[2026-03-23 15:13:59] - INFO - main - Application starting up...
+[2026-03-23 15:13:59] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:14:08] - INFO - main - Application starting up...
+[2026-03-23 15:14:08] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:14:09] - INFO - main - Application starting up...
+[2026-03-23 15:14:09] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:14:12] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 15:14:12] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 15:14:12] - DEBUG - filelock - Attempting to acquire lock 2468965004832 on data\users.json.lock
+[2026-03-23 15:14:12] - DEBUG - filelock - Lock 2468965004832 acquired on data\users.json.lock
+[2026-03-23 15:14:12] - DEBUG - filelock - Attempting to release lock 2468965004832 on data\users.json.lock
+[2026-03-23 15:14:12] - DEBUG - filelock - Lock 2468965004832 released on data\users.json.lock
+[2026-03-23 15:14:12] - ERROR - repositories.json_repository - Error reading from data\users.json: name 'aio_open' is not defined
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+[2026-03-23 15:14:12] - ERROR - main - HTTP Exception: Failed to read data from data\users.json | Status: 500
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 40, in register_user
+    existing_user_by_username = await self.user_repository.find_one_by_field("username", user_data.username)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 162, in find_one_by_field
+    data = await self._read_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 55, in _read_data
+    raise DataIntegrityError(f"Failed to read data from {self.file_path}")
+exceptions.custom_exceptions.DataIntegrityError: 500: Failed to read data from data\users.json
+[2026-03-23 15:14:12] - ERROR - api_requests - Request: POST /users/register | Status: 500 | Time: 0.0500s
+[2026-03-23 15:14:51] - INFO - main - Application starting up...
+[2026-03-23 15:14:51] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:14:54] - INFO - main - Application starting up...
+[2026-03-23 15:14:54] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:15:56] - INFO - main - Application starting up...
+[2026-03-23 15:15:56] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:03] - INFO - main - Application starting up...
+[2026-03-23 15:16:03] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:13] - INFO - main - Application starting up...
+[2026-03-23 15:16:13] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:19] - INFO - main - Application starting up...
+[2026-03-23 15:16:19] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:27] - INFO - main - Application starting up...
+[2026-03-23 15:16:27] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:37] - INFO - main - Application starting up...
+[2026-03-23 15:16:37] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:45] - INFO - main - Application starting up...
+[2026-03-23 15:16:45] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:48] - INFO - main - Application starting up...
+[2026-03-23 15:16:48] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:49] - INFO - main - Application starting up...
+[2026-03-23 15:16:49] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:51] - INFO - main - Application starting up...
+[2026-03-23 15:16:51] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:16:56] - INFO - main - Application starting up...
+[2026-03-23 15:16:56] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:19:06] - INFO - main - Application starting up...
+[2026-03-23 15:19:06] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:19:10] - INFO - main - Application starting up...
+[2026-03-23 15:19:10] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:19:13] - INFO - main - Application starting up...
+[2026-03-23 15:19:13] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:19:16] - INFO - main - Application starting up...
+[2026-03-23 15:19:16] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:19:29] - INFO - main - Application starting up...
+[2026-03-23 15:19:29] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:21:36] - INFO - main - Application starting up...
+[2026-03-23 15:21:36] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:22:46] - INFO - main - Application starting up...
+[2026-03-23 15:22:46] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:22:57] - INFO - main - Application starting up...
+[2026-03-23 15:22:57] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:01] - INFO - main - Application starting up...
+[2026-03-23 15:23:01] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:02] - INFO - main - Application starting up...
+[2026-03-23 15:23:02] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:05] - INFO - main - Application starting up...
+[2026-03-23 15:23:05] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:44] - INFO - main - Application starting up...
+[2026-03-23 15:23:44] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:46] - INFO - main - Application starting up...
+[2026-03-23 15:23:46] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:48] - INFO - main - Application starting up...
+[2026-03-23 15:23:48] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:52] - INFO - main - Application starting up...
+[2026-03-23 15:23:52] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:55] - INFO - main - Application starting up...
+[2026-03-23 15:23:55] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:23:57] - INFO - main - Application starting up...
+[2026-03-23 15:23:57] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:24:53] - INFO - main - Application starting up...
+[2026-03-23 15:24:53] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:25:10] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0016s
+[2026-03-23 15:25:10] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0706s
+[2026-03-23 15:25:12] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0005s
+[2026-03-23 15:25:12] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0014s
+[2026-03-23 15:25:31] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 15:25:31] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 15:25:31] - DEBUG - filelock - Attempting to acquire lock 2202315009600 on data\users.json.lock
+[2026-03-23 15:25:31] - DEBUG - filelock - Lock 2202315009600 acquired on data\users.json.lock
+[2026-03-23 15:25:31] - DEBUG - filelock - Attempting to release lock 2202315009600 on data\users.json.lock
+[2026-03-23 15:25:31] - DEBUG - filelock - Lock 2202315009600 released on data\users.json.lock
+[2026-03-23 15:25:31] - ERROR - repositories.json_repository - Error reading from data\users.json: name 'aio_open' is not defined
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+[2026-03-23 15:25:31] - ERROR - main - HTTP Exception: Failed to read data from data\users.json | Status: 500
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 39, in register_user
+    existing_user_by_username = await self.user_repository.find_one_by_field("username", user_data.username)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 162, in find_one_by_field
+    data = await self._read_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 55, in _read_data
+    raise DataIntegrityError(f"Failed to read data from {self.file_path}")
+exceptions.custom_exceptions.DataIntegrityError: 500: Failed to read data from data\users.json
+[2026-03-23 15:25:31] - ERROR - api_requests - Request: POST /users/register | Status: 500 | Time: 0.1077s
+[2026-03-23 15:26:44] - INFO - main - Application starting up...
+[2026-03-23 15:26:44] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:26:49] - INFO - main - Application starting up...
+[2026-03-23 15:26:49] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:27:05] - INFO - main - Application starting up...
+[2026-03-23 15:27:05] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:28:18] - INFO - main - Application starting up...
+[2026-03-23 15:28:18] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:29:49] - INFO - main - Application starting up...
+[2026-03-23 15:29:49] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:29:58] - INFO - main - Application starting up...
+[2026-03-23 15:29:58] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:49:40] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 15:49:40] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 15:49:40] - DEBUG - filelock - Attempting to acquire lock 2456580748832 on data\users.json.lock
+[2026-03-23 15:49:40] - DEBUG - filelock - Lock 2456580748832 acquired on data\users.json.lock
+[2026-03-23 15:49:40] - DEBUG - filelock - Attempting to release lock 2456580748832 on data\users.json.lock
+[2026-03-23 15:49:40] - DEBUG - filelock - Lock 2456580748832 released on data\users.json.lock
+[2026-03-23 15:49:40] - ERROR - repositories.json_repository - Error reading from data\users.json: name 'aio_open' is not defined
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+[2026-03-23 15:49:40] - ERROR - main - HTTP Exception: Failed to read data from data\users.json | Status: 500
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 38, in _read_data
+    async with aio_open(self.file_path, 'r', encoding='utf-8') as f:
+               ^^^^^^^^
+NameError: name 'aio_open' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 39, in register_user
+    existing_user_by_username = await self.user_repository.find_one_by_field("username", user_data.username)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 162, in find_one_by_field
+    data = await self._read_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\repositories\json_repository.py", line 55, in _read_data
+    raise DataIntegrityError(f"Failed to read data from {self.file_path}")
+exceptions.custom_exceptions.DataIntegrityError: 500: Failed to read data from data\users.json
+[2026-03-23 15:49:40] - ERROR - api_requests - Request: POST /users/register | Status: 500 | Time: 0.1202s
+[2026-03-23 15:57:28] - INFO - main - Application starting up...
+[2026-03-23 15:57:28] - INFO - main - FastAPI application startup completed.
+[2026-03-23 15:57:39] - INFO - main - Application starting up...
+[2026-03-23 15:57:39] - INFO - main - FastAPI application startup completed.
+[2026-03-23 16:00:43] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0017s
+[2026-03-23 16:00:43] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0686s
+[2026-03-23 16:00:51] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:00:51] - INFO - routers.user_router - Received request to list all users.
+[2026-03-23 16:00:51] - DEBUG - filelock - Attempting to acquire lock 2789963542416 on data\users.json.lock
+[2026-03-23 16:00:51] - DEBUG - filelock - Lock 2789963542416 acquired on data\users.json.lock
+[2026-03-23 16:00:51] - DEBUG - filelock - Attempting to release lock 2789963542416 on data\users.json.lock
+[2026-03-23 16:00:51] - DEBUG - filelock - Lock 2789963542416 released on data\users.json.lock
+[2026-03-23 16:00:51] - INFO - routers.user_router - Returning 0 users.
+[2026-03-23 16:00:51] - INFO - api_requests - Request: GET /users/ | Status: 200 | Time: 0.0437s
+[2026-03-23 16:01:01] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:01:01] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 16:01:01] - DEBUG - filelock - Attempting to acquire lock 2789963640784 on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Lock 2789963640784 acquired on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Attempting to release lock 2789963640784 on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Lock 2789963640784 released on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Attempting to acquire lock 2789963640784 on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Lock 2789963640784 acquired on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Attempting to release lock 2789963640784 on data\users.json.lock
+[2026-03-23 16:01:01] - DEBUG - filelock - Lock 2789963640784 released on data\users.json.lock
+[2026-03-23 16:01:01] - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-03-23 16:01:01] - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+[2026-03-23 16:01:01] - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+[2026-03-23 16:01:01] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 49, in register_user
+    hashed_password = self.get_password_hash(user_data.password)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 27, in get_password_hash
+    return pwd_context.hash(password)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+[2026-03-23 16:02:03] - INFO - main - Application starting up...
+[2026-03-23 16:02:03] - INFO - main - FastAPI application startup completed.
+[2026-03-23 16:02:25] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:02:25] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 16:02:25] - DEBUG - filelock - Attempting to acquire lock 1839742006816 on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Lock 1839742006816 acquired on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Attempting to release lock 1839742006816 on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Lock 1839742006816 released on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Attempting to acquire lock 1839742006816 on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Lock 1839742006816 acquired on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Attempting to release lock 1839742006816 on data\users.json.lock
+[2026-03-23 16:02:25] - DEBUG - filelock - Lock 1839742006816 released on data\users.json.lock
+[2026-03-23 16:02:25] - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-03-23 16:02:25] - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+[2026-03-23 16:02:25] - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+[2026-03-23 16:02:25] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 62, in register_user
+    hashed_password = self.get_password_hash(user_data.password)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 34, in get_password_hash
+    return pwd_context.hash(password_hash)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+[2026-03-23 16:02:27] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0007s
+[2026-03-23 16:02:28] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0861s
+[2026-03-23 16:02:32] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:02:32] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 16:02:32] - DEBUG - filelock - Attempting to acquire lock 1839742105104 on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Lock 1839742105104 acquired on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Attempting to release lock 1839742105104 on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Lock 1839742105104 released on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Attempting to acquire lock 1839742105104 on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Lock 1839742105104 acquired on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Attempting to release lock 1839742105104 on data\users.json.lock
+[2026-03-23 16:02:32] - DEBUG - filelock - Lock 1839742105104 released on data\users.json.lock
+[2026-03-23 16:02:32] - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-03-23 16:02:32] - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+[2026-03-23 16:02:32] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 62, in register_user
+    hashed_password = self.get_password_hash(user_data.password)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 34, in get_password_hash
+    return pwd_context.hash(password_hash)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+[2026-03-23 16:02:58] - INFO - main - Application starting up...
+[2026-03-23 16:02:58] - INFO - main - FastAPI application startup completed.
+[2026-03-23 16:04:33] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0009s
+[2026-03-23 16:04:33] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0866s
+[2026-03-23 16:05:49] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:05:49] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 16:05:49] - DEBUG - filelock - Attempting to acquire lock 1966687334288 on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Lock 1966687334288 acquired on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Attempting to release lock 1966687334288 on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Lock 1966687334288 released on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Attempting to acquire lock 1966687334288 on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Lock 1966687334288 acquired on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Attempting to release lock 1966687334288 on data\users.json.lock
+[2026-03-23 16:05:49] - DEBUG - filelock - Lock 1966687334288 released on data\users.json.lock
+[2026-03-23 16:05:49] - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-03-23 16:05:49] - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+[2026-03-23 16:05:49] - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+[2026-03-23 16:05:49] - ERROR - main - Unhandled exception for request: http://127.0.0.1:8000/users/register
+Traceback (most recent call last):
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\middleware\logging_middleware.py", line 29, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\routers\user_router.py", line 42, in register_user
+    user = await user_service.register_user(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 62, in register_user
+    hashed_password = self.get_password_hash(user_data.password)
+  File "C:\Users\hrithik.k\Desktop\python\Day2\task_management\task_management\services\user_service.py", line 34, in get_password_hash
+    return pwd_context.hash(password_hash)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hrithik.k\Desktop\python\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+[2026-03-23 16:07:14] - INFO - main - Application starting up...
+[2026-03-23 16:07:14] - INFO - main - FastAPI application startup completed.
+[2026-03-23 16:07:19] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0012s
+[2026-03-23 16:07:19] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0754s
+[2026-03-23 16:07:25] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:07:25] - INFO - routers.user_router - Received request to register user: john_doe
+[2026-03-23 16:07:25] - DEBUG - filelock - Attempting to acquire lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Lock 2243580473232 acquired on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Attempting to release lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Lock 2243580473232 released on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Attempting to acquire lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Lock 2243580473232 acquired on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Attempting to release lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - filelock - Lock 2243580473232 released on data\users.json.lock
+[2026-03-23 16:07:25] - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '3.2.2'
+[2026-03-23 16:07:25] - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+[2026-03-23 16:07:26] - DEBUG - filelock - Attempting to acquire lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Lock 2243580473232 acquired on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Attempting to release lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Lock 2243580473232 released on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Attempting to acquire lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Lock 2243580473232 acquired on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Attempting to release lock 2243580473232 on data\users.json.lock
+[2026-03-23 16:07:26] - DEBUG - filelock - Lock 2243580473232 released on data\users.json.lock
+[2026-03-23 16:07:26] - INFO - services.user_service - User 'john_doe' registered with ID 1.
+[2026-03-23 16:07:26] - INFO - routers.user_router - User 'john_doe' successfully registered.
+[2026-03-23 16:07:26] - INFO - api_requests - Request: POST /users/register | Status: 201 | Time: 0.9205s
+[2026-03-23 16:08:04] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:08:04] - INFO - routers.user_router - Received request to register user: Hrithik
+[2026-03-23 16:08:04] - DEBUG - filelock - Attempting to acquire lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Lock 2243580569040 acquired on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Attempting to release lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Lock 2243580569040 released on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Attempting to acquire lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Lock 2243580569040 acquired on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Attempting to release lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:04] - DEBUG - filelock - Lock 2243580569040 released on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Attempting to acquire lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Lock 2243580569040 acquired on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Attempting to release lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Lock 2243580569040 released on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Attempting to acquire lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Lock 2243580569040 acquired on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Attempting to release lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:05] - DEBUG - filelock - Lock 2243580569040 released on data\users.json.lock
+[2026-03-23 16:08:05] - INFO - services.user_service - User 'Hrithik' registered with ID 2.
+[2026-03-23 16:08:05] - INFO - routers.user_router - User 'Hrithik' successfully registered.
+[2026-03-23 16:08:05] - INFO - api_requests - Request: POST /users/register | Status: 201 | Time: 0.6758s
+[2026-03-23 16:08:34] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:08:34] - INFO - routers.user_router - Received request to login user: hrithik
+[2026-03-23 16:08:34] - DEBUG - filelock - Attempting to acquire lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:34] - DEBUG - filelock - Lock 2243580569040 acquired on data\users.json.lock
+[2026-03-23 16:08:34] - DEBUG - filelock - Attempting to release lock 2243580569040 on data\users.json.lock
+[2026-03-23 16:08:34] - DEBUG - filelock - Lock 2243580569040 released on data\users.json.lock
+[2026-03-23 16:08:34] - WARNING - services.user_service - Login attempt failed for non-existent username: hrithik
+[2026-03-23 16:08:34] - WARNING - main - Client Error: Invalid credentials | Status: 401
+[2026-03-23 16:08:34] - WARNING - api_requests - Request: POST /users/login | Status: 401 | Time: 0.0373s
+[2026-03-23 16:08:37] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:08:37] - INFO - routers.user_router - Received request to login user: hrithik
+[2026-03-23 16:08:37] - DEBUG - filelock - Attempting to acquire lock 2243580777296 on data\users.json.lock
+[2026-03-23 16:08:37] - DEBUG - filelock - Lock 2243580777296 acquired on data\users.json.lock
+[2026-03-23 16:08:37] - DEBUG - filelock - Attempting to release lock 2243580777296 on data\users.json.lock
+[2026-03-23 16:08:37] - DEBUG - filelock - Lock 2243580777296 released on data\users.json.lock
+[2026-03-23 16:08:37] - WARNING - services.user_service - Login attempt failed for non-existent username: hrithik
+[2026-03-23 16:08:37] - WARNING - main - Client Error: Invalid credentials | Status: 401
+[2026-03-23 16:08:37] - WARNING - api_requests - Request: POST /users/login | Status: 401 | Time: 0.0361s
+[2026-03-23 16:08:54] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:08:54] - INFO - routers.user_router - Received request to login user: Hrithik
+[2026-03-23 16:08:54] - DEBUG - filelock - Attempting to acquire lock 2243580776080 on data\users.json.lock
+[2026-03-23 16:08:54] - DEBUG - filelock - Lock 2243580776080 acquired on data\users.json.lock
+[2026-03-23 16:08:54] - DEBUG - filelock - Attempting to release lock 2243580776080 on data\users.json.lock
+[2026-03-23 16:08:54] - DEBUG - filelock - Lock 2243580776080 released on data\users.json.lock
+[2026-03-23 16:08:55] - INFO - services.user_service - User 'Hrithik' authenticated successfully.
+[2026-03-23 16:08:55] - INFO - routers.user_router - User 'Hrithik' successfully logged in.
+[2026-03-23 16:08:55] - INFO - api_requests - Request: POST /users/login | Status: 200 | Time: 0.6083s
+[2026-03-23 16:09:04] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:09:04] - INFO - routers.user_router - Received request to list all users.
+[2026-03-23 16:09:04] - DEBUG - filelock - Attempting to acquire lock 2243580645968 on data\users.json.lock
+[2026-03-23 16:09:04] - DEBUG - filelock - Lock 2243580645968 acquired on data\users.json.lock
+[2026-03-23 16:09:04] - DEBUG - filelock - Attempting to release lock 2243580645968 on data\users.json.lock
+[2026-03-23 16:09:04] - DEBUG - filelock - Lock 2243580645968 released on data\users.json.lock
+[2026-03-23 16:09:04] - INFO - routers.user_router - Returning 2 users.
+[2026-03-23 16:09:04] - INFO - api_requests - Request: GET /users/ | Status: 200 | Time: 0.0232s
+[2026-03-23 16:44:40] - INFO - main - Application starting up...
+[2026-03-23 16:44:40] - INFO - main - FastAPI application startup completed.
+[2026-03-23 16:44:42] - INFO - api_requests - Request: GET /docs | Status: 200 | Time: 0.0005s
+[2026-03-23 16:44:42] - INFO - api_requests - Request: GET /openapi.json | Status: 200 | Time: 0.0216s
+[2026-03-23 16:44:50] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:44:50] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:44:50] - INFO - routers.task_router - Received request to get task with ID: 2
+[2026-03-23 16:44:50] - DEBUG - filelock - Attempting to acquire lock 1289509023632 on data\tasks.json.lock
+[2026-03-23 16:44:50] - DEBUG - filelock - Lock 1289509023632 acquired on data\tasks.json.lock
+[2026-03-23 16:44:50] - DEBUG - filelock - Attempting to release lock 1289509023632 on data\tasks.json.lock
+[2026-03-23 16:44:50] - DEBUG - filelock - Lock 1289509023632 released on data\tasks.json.lock
+[2026-03-23 16:44:50] - WARNING - services.task_service - Attempted to retrieve non-existent task with ID: 2
+[2026-03-23 16:44:50] - WARNING - main - Client Error: Task with id 2 not found. | Status: 404
+[2026-03-23 16:44:50] - WARNING - api_requests - Request: GET /tasks/2 | Status: 404 | Time: 0.0254s
+[2026-03-23 16:45:02] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:45:02] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:45:02] - INFO - routers.task_router - Received request to create task: Buy groceries by john_doe
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to acquire lock 1289509326784 on data\users.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509326784 acquired on data\users.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to release lock 1289509326784 on data\users.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509326784 released on data\users.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to acquire lock 1289509121360 on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509121360 acquired on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to release lock 1289509121360 on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509121360 released on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to acquire lock 1289509121360 on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509121360 acquired on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Attempting to release lock 1289509121360 on data\tasks.json.lock
+[2026-03-23 16:45:02] - DEBUG - filelock - Lock 1289509121360 released on data\tasks.json.lock
+[2026-03-23 16:45:02] - INFO - services.task_service - Task 'Buy groceries' created with ID 1 for owner 'john_doe'.
+[2026-03-23 16:45:02] - INFO - routers.task_router - Task 'Buy groceries' created with ID 1.
+[2026-03-23 16:45:02] - INFO - api_requests - Request: POST /tasks/ | Status: 201 | Time: 0.0230s
+[2026-03-23 16:45:09] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:45:09] - DEBUG - asyncio - Using proactor: IocpProactor
+[2026-03-23 16:45:09] - INFO - routers.task_router - Received request to get task with ID: 1
+[2026-03-23 16:45:09] - DEBUG - filelock - Attempting to acquire lock 1289509327696 on data\tasks.json.lock
+[2026-03-23 16:45:09] - DEBUG - filelock - Lock 1289509327696 acquired on data\tasks.json.lock
+[2026-03-23 16:45:09] - DEBUG - filelock - Attempting to release lock 1289509327696 on data\tasks.json.lock
+[2026-03-23 16:45:09] - DEBUG - filelock - Lock 1289509327696 released on data\tasks.json.lock
+[2026-03-23 16:45:09] - INFO - services.task_service - Task with ID 1 retrieved.
+[2026-03-23 16:45:09] - INFO - routers.task_router - Task ID 1 retrieved successfully.
+[2026-03-23 16:45:09] - INFO - api_requests - Request: GET /tasks/1 | Status: 200 | Time: 0.0150s
+[2026-03-23 16:59:01] - INFO - main - Application starting up...
+[2026-03-23 16:59:01] - INFO - main - FastAPI application startup completed.
+[2026-03-24 10:42:30] - INFO - main - Application starting up...
+[2026-03-24 10:42:30] - INFO - main - FastAPI application startup completed.
+[2026-03-24 10:42:35] - INFO - main - Application starting up...
+[2026-03-24 10:42:35] - INFO - main - FastAPI application startup completed.

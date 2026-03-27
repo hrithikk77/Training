@@ -1,0 +1,10 @@
+2026-03-22 20:23:02 | GET /tasks | Status: 200 | Time: 2ms
+2026-03-22 20:23:45 | GET /docs | Status: 200 | Time: 1ms
+2026-03-22 20:23:45 | GET /openapi.json | Status: 200 | Time: 13ms
+2026-03-22 20:23:52 | GET /tasks | Status: 200 | Time: 1ms
+2026-03-22 20:25:45 | POST /tasks | Status: 201 | Time: 5ms
+2026-03-22 20:25:57 | GET /tasks | Status: 200 | Time: 2ms
+2026-03-23 10:48:31 | GET /tasks | Status: 200 | Time: 5ms
+2026-03-23 10:48:58 | POST /tasks | Status: 201 | Time: 4ms
+2026-03-23 10:49:59 | GET /tasks | Status: 200 | Time: 2ms
+2026-03-23 10:50:22 | GET /tasks/1 | Status: 200 | Time: 2ms

@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-jose[cryptography]
+passlib[bcrypt]
+aiofiles # For async file operations, useful for JSON repopython-filelock # For concurrent file writes in JsonRepository

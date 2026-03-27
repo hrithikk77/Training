@@ -1,0 +1,10 @@
+2026-03-22 22:54:49 | GET /health | Status: 200 | Time: 10ms
+2026-03-22 22:54:49 | POST /tasks | Status: 201 | Time: 3ms
+2026-03-22 22:54:49 | POST /tasks | Status: 422 | Time: 3ms
+2026-03-22 22:54:49 | POST /tasks | Status: 201 | Time: 2ms
+2026-03-22 22:54:49 | GET /tasks | Status: 200 | Time: 2ms
+2026-03-22 22:54:49 | GET /tasks/999 | Status: 404 | Time: 1ms
+2026-03-22 22:54:49 | POST /tasks | Status: 201 | Time: 2ms
+2026-03-22 22:54:49 | PUT /tasks/1 | Status: 200 | Time: 4ms
+2026-03-22 22:54:49 | POST /tasks | Status: 201 | Time: 1ms
+2026-03-22 22:54:49 | DELETE /tasks/1 | Status: 200 | Time: 1ms
