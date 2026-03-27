@@ -1,0 +1,13 @@
+2026-03-20 10:08:46.483803 - INFO - User 'rahul' registered successfully
+2026-03-20 10:08:50.152583 - INFO - Viewed users list
+2026-03-20 10:45:43.895681 - INFO - Viewed users list
+2026-03-20 10:45:53.737644 - INFO - User 'hrithik' registered successfully
+2026-03-20 10:45:57.068098 - INFO - Viewed users list
+2026-03-20 10:47:14.688931 - INFO - User 'hrithik' registered successfully
+2026-03-20 10:47:16.990714 - INFO - Viewed users list
+2026-03-20 10:48:34.698158 - INFO - Viewed users list
+2026-03-20 10:49:42.821710 - INFO - Viewed users list
+2026-03-20 10:49:50.198629 - INFO - User 'hrithik' registered successfully
+2026-03-20 10:53:23.863969 - INFO - User 'nikhil' registered successfully
+2026-03-20 10:53:25.538607 - INFO - Viewed users list
+2026-03-20 10:53:47.856813 - INFO - User 'nikhil' logged in
